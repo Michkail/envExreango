@@ -1,0 +1,28 @@
+{
+  "name": "envexreango",
+  "version": "1.0.0",
+  "description": "MERN app to learn fullstack development",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michkail/envExreango.git"
+  },
+  "keywords": [],
+  "author": "Pytr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michkail/envExreango/issues"
+  },
+  "homepage": "https://github.com/Michkail/envExreango#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongodb": "^4.8.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19"
+  }
+}
