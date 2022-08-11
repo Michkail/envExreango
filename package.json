@@ -4,9 +4,11 @@
   "description": "MERN app to learn fullstack development",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon"
+    "server": "nodemon server",
+    "client-serv": "npm start --prefix client-serv",
+    "dev": "concurrently \"npm run server\" \"npm run client-serv\""
   },
-  "repository": {
+  "repository": { 
     "type": "git",
     "url": "git+https://github.com/Michkail/envExreango.git"
   },

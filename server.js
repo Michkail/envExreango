@@ -15,7 +15,7 @@ const withDB = async (operations, res) => {
   } catch (error) {
     res.status(500).json({ message: 'Error connecting to db', error });
   }
-}
+};
 
 app.get('/api/articles/:name', async (req, res) => {
   withDB(async (db) => {
@@ -40,14 +40,14 @@ app.post('/api/articles/:name/add-comments', (req, res) => {
       { name: articleName }, 
       {
         $set: { 
-          comments: articleInfo.comments.concat({ username, text })
-        }
+          comments: articleInfo.comments.concat({ username, text }),
+        },
       }
     );
-    const updatedArticleInfo = await db
+    const updateArticleInfo = await db
       .collection('articles')
       .findOne({ name: articleName });
-    res.status(200).json(updatedArticleInfo);
+    res.status(200).json(updateArticleInfo);
   }, res);
 });
 

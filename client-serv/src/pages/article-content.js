@@ -14,7 +14,7 @@ const articles = [
     title: 'hufty',
     thumbnail: 'https://i.picsum.photos/id/884/200/300.jpg?hmac=VnWK-J-znCMSx2FSelz3LtT1DXhrxRLtzsX6-hkZDJk',
     content: [
-      ``,
+      `Nam blandit tristique risus, eget accumsan nisl interdum eu.`,
       ``,
       ``
     ]
